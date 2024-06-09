@@ -1,7 +1,12 @@
 # AKASEC-CTF-2024-challenges
 The challenges I created for AKASEC CTF 2024
 
-![](./images/ctf-logo.png)
+<br>
+
+<p align="center">
+  <img src="./images/ctf-logo.png" alt="drawing" width="350"/>
+</p>
+
 
 ------------------------------
 # Forensics :
