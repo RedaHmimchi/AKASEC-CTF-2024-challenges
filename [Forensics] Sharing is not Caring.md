@@ -15,13 +15,13 @@ Analyzing the pcap file, we find that the user visited two websites:
 
 ![](./images/mal1.png)
 
-After downloading the malware and analyzing it, we use two methods:
+After downloading the malware and analyzing it, There is two methods:
 
 First, we use the strings command on the file to reveal the PowerShell code.
 
 ![](./images/mal2.png)
 
-Alternatively, VirusTotal shows that the malware drops an `sslkey.log` file in `C:\`.
+Alternatively, VirusTotal shows that the malware drops a `sslkey.log` file in `C:\Users\Public\Documents\Internet Explorer\SIGNUP\ink\sslkey.log`.
 
 ![](./images/mal3.png)
 
