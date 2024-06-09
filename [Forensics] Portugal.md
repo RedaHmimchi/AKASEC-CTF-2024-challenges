@@ -14,7 +14,7 @@ Using Volatility 2, we find the chrome.exe process, so let's check the Chrome hi
 
 ![](./images/)
 
-I used a Volatility 2 plugin from ![superponiblog](https://blog.superponible.com/2014/08/31/volatility-plugin-chrome-history/)
+I used a Volatility 2 plugin from [superponiblog](https://blog.superponible.com/2014/08/31/volatility-plugin-chrome-history/)
 
 ![](./images/)
 

@@ -48,7 +48,7 @@ if __name__ == "__main__":
         reverse_chunks(sys.argv[1])
 ```
 
-We received another audio file of a woman speaking, but there is some noise. The hint says that "we must see it." By converting the WAV file to a PNG using ![wav2png](https://directmusic.me/wav2png/), we can see the flag.
+We received another audio file of a woman speaking, but there is some noise. The hint says that "we must see it." By converting the WAV file to a PNG using [wav2png](https://directmusic.me/wav2png/), we can see the flag.
 
 ![](./images/)
 
