@@ -13,29 +13,29 @@ Analyzing the pcap file, we find that the user visited two websites:
     1 - A website with a download link for malware.
     2 - A flag submission website.
 
-[](./images/mal1.png)
+![](./images/mal1.png)
 
 After downloading the malware and analyzing it, we use two methods:
 
 First, we use the strings command on the file to reveal the PowerShell code.
 
-[](./images/mal2.png)
+![](./images/mal2.png)
 
 Alternatively, VirusTotal shows that the malware drops an `sslkey.log` file in `C:\`.
 
-[](./images/mal3.png)
+![](./images/mal3.png)
 
 Decoding the PowerShell script, we obtain:
 
-[](./images/mal4.png)
+![](./images/mal4.png)
 
 Next, let's look for the file in the `.ad1` image using FTK Imager.
 
-[](./images/mal5.png)
+![](./images/mal5.png)
 
 After extracting it, we decrypt the traffic to retrieve the flag.
 
-[](./images/mal6.png)
+![](./images/mal6.png)
 
 FLAG : 
 > AKASEC{B4s1c_M4lw4r3_4nd_PC4P_4n4lys1s}

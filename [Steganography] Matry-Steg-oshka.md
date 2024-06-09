@@ -14,11 +14,11 @@
 
 In this challenge, we have an audio WAV file. By opening it with any spectrum analyzer, we find some words at the end of the audio.
 
-[](./images/steg1.png)
+![](./images/steg1.png)
 
 Using CFMVSUJD, we extract a file with steghide.
 
-[](./images/steg2.png)
+![](./images/steg2.png)
 
 Opening the file with a hex editor, we see that every 16 bytes are reversed. Let's run a Python script to fix that.
 
@@ -50,7 +50,7 @@ if __name__ == "__main__":
 
 We received another audio file of a woman speaking, but there is some noise. The hint says that "we must see it." By converting the WAV file to a PNG using [wav2png](https://directmusic.me/wav2png/), we can see the flag.
 
-[](./images/left_channel.png)
+![](./images/left_channel.png)
 
 FLAG : 
 > AKASEC{h1dd3n_1n_r4w}

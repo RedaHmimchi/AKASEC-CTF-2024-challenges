@@ -10,27 +10,27 @@
 
 In this challenge, we have a pcap file. Basic analysis reveals some suspicious requests.
 
-[](./images/ex1.png)
+![](./images/ex1.png)
 
 Decoding the first subdomain from hex, we find a 7z extension.
 
-[](./images/ex2.png)
+![](./images/ex2.png)
 
 Let's retrieve that zip file by extracting it from the DNS traffic:
 
 ```tshark -T fields -e dns.qry.name -r packet.pcapng | grep akasec.ma | uniq | sed 's/.akasec.ma//' | tr -d '\n'```
 
-[](./images/ex3.png)
+![](./images/ex3.png)
 
 We discover that the 7z file is password-protected, so let's crack it with John the Ripper.
 
-[](./images/ex4.png)
+![](./images/ex4.png)
 
 After extracting the zip, we find another password-protected PDF. Let's crack it using `pdfcracker`.
 
-[](./images/ex4.png)
+![](./images/ex5.png)
 
-[](./images/ex6.png)
+![](./images/ex6.png)
 
 FLAG : 
 > AKASEC{PC4P_DNS_3xf1ltr4t10n_D0n3!!}
