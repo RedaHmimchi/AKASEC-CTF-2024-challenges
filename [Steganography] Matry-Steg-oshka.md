@@ -20,7 +20,11 @@ Using CFMVSUJD, we extract a file with steghide.
 
 ![](./images/steg2.png)
 
-Opening the file with a hex editor, we see that every 16 bytes are reversed. Let's run a Python script to fix that.
+Opening the file with a hex editor, we see that every 16 bytes are reversed. 
+
+![](./images/stegrev.png)
+
+Let's run a Python script to fix that.
 
 ```py
 import sys
